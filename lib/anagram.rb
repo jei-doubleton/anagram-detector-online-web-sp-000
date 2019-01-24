@@ -11,7 +11,6 @@ class Anagram
       word_letters = @word.split
       world_letters.all? { |letter| anagram.include?(letter)}
       anagram
-      end
     end
   end
 
