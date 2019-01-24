@@ -10,7 +10,7 @@ class Anagram
     array.select do |anagram|
       word_letters = @word.split
       world_letters.all? { |letter| anagram.include?(letter)}
-      word
+      anagram
       end
     end
   end
