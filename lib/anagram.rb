@@ -9,8 +9,9 @@ class Anagram
   def match(array)
     array.select do |anagram|
       word_letters = @word.split
-      word_letters.all? { |letter| anagram.include?(letter)}
-      anagram
+      if word_letters.all? { |letter| anagram.include?(letter)}
+        anagram
+      end
     end
   end
 
