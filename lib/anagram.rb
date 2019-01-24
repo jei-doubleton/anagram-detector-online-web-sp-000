@@ -13,5 +13,4 @@ class Anagram
       word_array == anagram.split(//).sort
     end
   end
-
 end
