@@ -7,8 +7,11 @@ class Anagram
   end
 
   def match(array)
-    array.collect do |anagram|
-
+    array.select do |anagram|
+      word_letters = @word.split
+      world_letters.all? { |letter| anagram.include?(letter)}
+      word
+      end
     end
   end
 
